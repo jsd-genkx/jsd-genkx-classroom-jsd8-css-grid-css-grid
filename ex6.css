@@ -22,31 +22,30 @@
 
 
 /* exercise 5 */
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 20px;
-    grid-template-areas:
-        "header header"
-        "main sidebar"
-        "footer footer";
-}
 
-.item-1 {
-    grid-area: header;
-}
-
-.item-2 {
-    grid-area: main;
-}
-
-.item-3 {
-    grid-area: sidebar;
-}
-
-.item-4 {
-    grid-area: footer;
-}
 
 /* exercise 6 (optional) - follow the assigned YT video */
+.container {
+    display: grid;
+    grid-template-rows: 100px 300px 100px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+    'header header'
+    'main aside'
+    'footer footer';
+}
+
+.item-1{
+  grid-area: header;
+}
+
+.item-2{
+   grid-area: main ;
+}
+
+.item-3{
+    grid-area: aside;
+}
+.item-4{
+    grid-area: footer;
+}
