@@ -1,11 +1,44 @@
 /* exercise 1 */
-
+/* .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+} */
 /* exercise 2 */
-
+/* .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+} */
 /* exercise 3 */
-
+/* .item-1{
+    grid-column: span 2;
+} */
 /* exercise 4 */
-
+/* .item-4{
+    grid-column-start: 2;
+    grid-row-start: 3;
+} */
 /* exercise 5 */
-
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    grid-template-areas: "header header" "main sidebar" "footer footer";
+}
+.item-1 { 
+    grid-area: header; 
+} 
+.item-2 { 
+    grid-area: main; 
+} 
+.item-3 { 
+    grid-area: sidebar; 
+} 
+.item-4 { 
+    grid-area: footer; 
+}
+    
 /* exercise 6 (optional) - follow the assigned YT video */
