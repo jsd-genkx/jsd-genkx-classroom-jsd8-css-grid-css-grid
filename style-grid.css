@@ -1,11 +1,58 @@
 /* exercise 1 */
-
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
 /* exercise 2 */
+.container {
+  /* gap: 20px; */
+  row-gap: 30px;
+  column-gap: 20px;
+}
 
 /* exercise 3 */
+.container > .item:first-child,
+.container > .item:last-child {
+  grid-column: span 2;
+}
+.container > .item.item-02 {
+  grid-row: span 2;
+}
 
 /* exercise 4 */
+.container > .item.item-04 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
 
 /* exercise 5 */
+.container {
+  display: grid;
+  grid-template-columns: 1.5fr 0.5fr;
+  grid-template-rows: 60px 3fr 2fr 1fr 60px;
+  gap: 20px;
+  grid-template-areas: "header header" "main sidebar" "main sidebar" "main sidebar" "footer footer";
+}
+.item:first-child {
+  grid-area: header;
+  background-color: #8ca0ff;
+}
+.item:last-child {
+  grid-area: footer;
+  background-color: #8cffa0;
+}
+.container > .item.item-05,
+.container > .item.item-02 {
+  grid-area: main;
+  background-color: #ffff64;
+}
+
+/* .container > .item.item-04,
+.container > .item.item-06,
+.container > .item.item-03 {
+  grid-area: sidebar;
+  background-color: #ffa08c;
+} */
 
 /* exercise 6 (optional) - follow the assigned YT video */
