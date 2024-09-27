@@ -1,11 +1,8 @@
-/* exercise 1 */
-
-/* exercise 2 */
-
-/* exercise 3 */
-
-/* exercise 4 */
-
-/* exercise 5 */
-
-/* exercise 6 (optional) - follow the assigned YT video */
+.container {
+    display: grid;
+    height: 660px;
+    grid-template-rows: repeat(2, 100px);
+    grid-template-columns: repeat(2, 100px);
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
