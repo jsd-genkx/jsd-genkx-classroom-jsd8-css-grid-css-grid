@@ -1,11 +1,42 @@
 /* exercise 1 */
-
+.container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* 1fr represents one fraction of the available space.
+    */
+}
 /* exercise 2 */
-
+.container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* 1fr represents one fraction of the available space.*/
+    gap: 20-px;
+}
 /* exercise 3 */
-
+.item-1{
+    grid-column: span 2;
+}
 /* exercise 4 */
-
+.item-4{
+    grid-column-start: 2;
+}
 /* exercise 5 */
+.container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* 1fr represents one fraction of the available space.*/
+    gap: 20-px;
+    grid-template-areas:
+        "header header"
+        "main sidebar"
+        "footer footer";
+}
 
 /* exercise 6 (optional) - follow the assigned YT video */
+/*.item-1{
+    grid-row: 1/3;
+    grid-column: 1/2;
+}
+.item-4{
+    grid-area: 3/5/6/7;
+}*/
